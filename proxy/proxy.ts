@@ -20,7 +20,7 @@ app.use((req: Request, res: Response, next: NextFunction): void => {
 });
 
 app.use('/api', createProxyMiddleware({
-  target: process.env.GUESTBOOK_API_TARGET || 'https://e4nq1qffvc.execute-api.eu-north-1.amazonaws.com/prod',
+  target: process.env.GUESTBOOK_API_URL,
   changeOrigin: true,
   pathRewrite: { '^/api': '' },
 

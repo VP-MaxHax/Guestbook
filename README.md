@@ -25,6 +25,11 @@ Simple guestbooks web app using aws lambda and aws dynamoDB to save guestbook en
 
     > `npm start`
 6. Setup the aws services on project root
+
+    > install cdk if you haven't already `npm install -g aws-cdk`. You can check installation with `cdk --version`.
+
+    > install AWS clien if you haven't already. You can check installation with `aws --version`.
+
     > `cdk bootstrap aws://<ACCOUNT_ID>/eu-north-1` (Replace <ACCOUNT_ID> with you own id)
 
     > `cdk deploy`
