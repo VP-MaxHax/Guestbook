@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "lib": [
       "es2022"
     ],
@@ -23,8 +23,19 @@
     "skipLibCheck": true,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "types": ["node", "jest", "aws-lambda"]
   },
+  "include": [
+    "lib",
+    "lambda",
+    "test",
+    "scripts",
+    "frontend/src"
+  ],
   "exclude": [
     "node_modules",
     "cdk.out"

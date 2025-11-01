@@ -1,0 +1,4 @@
+TABLE_NAME=GuestbookStack-GuestbookTable<rest_of_the_table_id>
+AWS_REGION=<aws_region_code> eg. eu-north-1
+GUESTBOOK_API_URL=https://<api-id>.execute-api.<aws_region_code>.amazonaws.com/prod/
+GUESTBOOK_API_KEY=<your-api-key>
